@@ -8,6 +8,7 @@ const HomePage = () => {
       <Button variant="outlined" sx={style.ButtonSx()}>Contained</Button>
       <Button variant="contained" sx={style.ButtonSx()}>Contained</Button>
       <Button variant="contained" sx={style.ButtonSx()}>Contained</Button>
+      <Button variant="contained" sx={style.ButtonSx()}>Contained</Button>
 
     </Stack>
   )
