@@ -1,6 +1,6 @@
 import { Button, Stack } from "@mui/material";
 import style from "../../src/components/pages/home/homePage.styles";
-import Layout from "../../src/components/ui/layout/index";
+import Layout from "../../src/components/ui/layout/index/index";
 
 const HomePage = () => {
   return (

@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/pages/_app.js", "src/pages/home/index.jsx"  ],
+, "src/pages/_app.js", "src/pages/home/index.jsx", "src/components/ui/inputs/search/searchInput.jsx", "src/components/ui/inputs/search/searchInput.styles.js", "src/components/ui/inputs/main/mainInput.jsx", "src/components/ui/inputs/main/mainInput.styles.js"  ],
   "exclude": [
     "node_modules"
   ]
