@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import InstagramIcon from "../../ui/icons/instagram";
+import { BADGE_STATUS } from "./homePage.constant";
 
 export const sliderNodes = [
   <Box
@@ -53,5 +54,64 @@ export const servicesButtonData = [
   {
     text: "محصول ۶",
     icon: <InstagramIcon color={"secondary"} fontSize={"large"} />,
+  },
+];
+
+export const products = [
+  {
+    rate: 1,
+    amoutOfRates: 460,
+    name: "محصول زیبا",
+    badgeStatus: BADGE_STATUS.NEW,
+    price: 49000,
+  },
+  {
+    rate: 3,
+    amoutOfRates: 800,
+    name: "محصول زیبا",
+    badgeStatus: BADGE_STATUS.NEW,
+    price: 419000,
+  },
+  {
+    rate: 5,
+    amoutOfRates: 960,
+    name: "محصول زیبا",
+    badgeStatus: BADGE_STATUS.UNAVAILABLE,
+    price: 479000,
+  },
+  {
+    rate: 1,
+    amoutOfRates: 460,
+    name: "محصول زیبا",
+    badgeStatus: BADGE_STATUS.NEW,
+    price: 49000,
+  },
+  {
+    rate: 2,
+    amoutOfRates: 460,
+    name: "محصول زیبا",
+    badgeStatus: BADGE_STATUS.UNAVAILABLE,
+    price: 60000,
+  },
+  {
+    rate: 4,
+    amoutOfRates: 50,
+    name: "محصول زیبا",
+    badgeStatus: BADGE_STATUS.NEW,
+    price: 469000,
+  },
+  {
+    rate: 1,
+    amoutOfRates: 150,
+    name: "محصول زیبا",
+    badgeStatus: BADGE_STATUS.NEW,
+    price: 1469000,
+  },
+  {
+    rate: 5,
+    amoutOfRates: 50,
+    name: "محصول زیبا",
+    badgeStatus: BADGE_STATUS.UNAVAILABLE,
+    price: 69000,
   },
 ];
