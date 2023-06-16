@@ -15,6 +15,7 @@ import {
 import ServicesButton from "../../src/components/ui/servicesButton/servicesButton";
 import ProductCard from "../../src/components/ui/card/productCard/productCard";
 import { BADGE_STATUS } from "../../src/components/pages/home/homePage.constant";
+import NewProductBannerCard from "../../src/components/ui/card/newProductBannerCard/newProductBannerCard";
 
 const HomePage = () => {
   return (
@@ -45,7 +46,7 @@ const HomePage = () => {
           >
             <Box width={{ lg: "90%" }}>
               <Grid
-                // container
+                container
                 direction={"row"}
                 rowSpacing={2}
                 columnSpacing={{ sm: 1 }}
@@ -124,24 +125,115 @@ const HomePage = () => {
           <Grid
             container
             direction={"row"}
-            mt={"0px"}
-            rowSpacing={4}
-            columnSpacing={{ sm: 1 }}
+            rowSpacing={{ xs: 0.5, sm: 0.5, md: 0, lg: 0 }}
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
+            paddingTop={"32px"}
           >
             <Grid
+              container
+              lg={6}
+              md={6}
+              sm={12}
+              xs={12}
+              rowSpacing={0.5}
+              columnSpacing={0.5}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              <Grid
+                item
+                lg={6}
+                md={6}
+                sm={12}
+                xs={12}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <NewProductBannerCard
+                  height="200px"
+                  width="99%"
+                  title="محصول جدید و قشنگ"
+                  description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "
+                  image=""
+                  link="#"
+                  imageHeight={100}
+                  imageWidth={80}
+                />
+                 
+              </Grid>
+              <Grid
+                item
+                lg={6}
+                md={6}
+                sm={12}
+                xs={12}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <NewProductBannerCard
+                  title="محصول جدید و قشنگ"
+                  description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "
+                  image=""
+                  link="#"
+                  imageHeight={100}
+                  imageWidth={80}
+                  height="200px"
+                  width="99%"
+                />
+                 
+              </Grid>
+
+              <Grid
+                item
+                lg={12}
+                md={12}
+                sm={12}
+                xs={12}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <NewProductBannerCard
+                  height="200px"
+                  width="99%"
+                  title="محصول جدید و قشنگ"
+                  description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "
+                  image=""
+                  link="#"
+                  imageHeight={100}
+                  imageWidth={80}
+                />
+                 
+              </Grid>
+            </Grid>
+
+            <Grid
               item
-              lg={3}
-              md={4}
-              sm={6}
+              lg={6}
+              md={6}
+              sm={12}
               xs={12}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
-              // key={`product_${index}`}
-            ></Grid>
+            >
+              <NewProductBannerCard
+                height="406px"
+                width="99%"
+                title="محصول جدید و قشنگ"
+                description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "
+                image=""
+                link="#"
+                imageHeight={100}
+                imageWidth={80}
+              />
+               
+            </Grid>
           </Grid>
         </Box>
       </Stack>
