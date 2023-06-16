@@ -6,9 +6,7 @@ const Layout = ({ children }) => {
   return (
     <Stack>
       <Navbar />
-      <Box width={"100%"} height={"73vh"}>
-        {children}
-      </Box>
+      <Box width={"100%"}>{children}</Box>
       <Footer />
     </Stack>
   );

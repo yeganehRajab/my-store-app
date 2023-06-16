@@ -30,8 +30,8 @@ const theme = createTheme({
     common: {
       white: "#fff",
       black: {
-        light: "##424D4D",
-        main: "##2C3333",
+        light: "#424D4D",
+        main: "#2C3333",
         dark: "#161A1A",
       },
     },
