@@ -10,7 +10,7 @@ const Footer = () => {
     <Stack position={"relative"}>
       <Grid container bgcolor={"primary.dark"} sx={style.GridSx()}>
         <Grid
-          item
+          container
           xs={12}
           sm={6}
           md={3}
@@ -41,7 +41,7 @@ const Footer = () => {
           </Link>
         </Grid>
         <Grid
-          item
+          container
           xs={12}
           sm={6}
           md={3}
@@ -72,7 +72,7 @@ const Footer = () => {
           </Link>
         </Grid>
         <Grid
-          item
+          container
           xs={12}
           sm={6}
           md={3}
