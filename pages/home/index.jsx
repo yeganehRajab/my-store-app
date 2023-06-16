@@ -40,6 +40,7 @@ const HomePage = () => {
           <Box width={{ lg: "90%" }}>
             <Grid
               container
+              direction={"row"}
               rowSpacing={2}
               columnSpacing={{ sm: 1 }}
               display={"flex"}
