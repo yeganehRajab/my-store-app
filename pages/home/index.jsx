@@ -45,7 +45,7 @@ const HomePage = () => {
           >
             <Box width={{ lg: "90%" }}>
               <Grid
-                container
+                // container
                 direction={"row"}
                 rowSpacing={2}
                 columnSpacing={{ sm: 1 }}
