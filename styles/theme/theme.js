@@ -13,14 +13,14 @@ const theme = createTheme({
       main: "#0E8388",
     },
     success: {
-        light: "#CBF774",
-        main: "#B7DF69",
-        dark: "#A1C45C",
+      light: "#CBF774",
+      main: "#B7DF69",
+      dark: "#A1C45C",
     },
     error: {
-        light: "#FF0000",
-        main: "#E50000",
-        dark: "#CC0000",
+      light: "#FF0000",
+      main: "#E50000",
+      dark: "#CC0000",
     },
     grey: {
       light: "#E1FCF6",
@@ -28,9 +28,9 @@ const theme = createTheme({
       dark: "#B3C9C4",
     },
     common: {
-        white: "#fff",
-        black: {
-            light: "##424D4D",
+      white: "#fff",
+      black: {
+        light: "##424D4D",
         main: "##2C3333",
         dark: "#161A1A",
       },
