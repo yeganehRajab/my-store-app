@@ -15,7 +15,6 @@ const Footer = () => {
           sm={6}
           md={3}
           display="flex"
-          direction="column"
           gap={1}
           marginTop={"20px"}
         >
