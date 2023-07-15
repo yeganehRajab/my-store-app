@@ -7,19 +7,20 @@ import Link from "next/link";
 import x from "../../public/images/login/bag.png";
 import { useFormik } from "formik";
 
-const loginInitialValues = {
+const signupInitialValues = {
   mobileNumber: "",
   password: "",
+  rePassword: "",
 };
 
-const LoginPage = () => {
+const SignupPage = () => {
   //
   const handleSubmit = (values) => {
     console.log(values);
   };
 
   const formik = useFormik({
-    initialValues: loginInitialValues,
+    initialValues: signupInitialValues,
     onSubmit: handleSubmit,
   });
 
@@ -36,8 +37,9 @@ const LoginPage = () => {
               mb: "100px",
             }}
           >
-            ورود
+            ثبت نام
           </Typography>
+
           <Stack
             component="form"
             onSubmit={formik.handleSubmit}
@@ -67,45 +69,40 @@ const LoginPage = () => {
                 }}
                 {...formik.getFieldProps("password")}
               />
+              <TextField
+                label="تکرار رمز عبور"
+                variant="standard"
+                sx={{
+                  label: {
+                    fontWeight: "500",
+                    fontSize: "18px",
+                  },
+                }}
+                {...formik.getFieldProps("rePassword")}
+              />
               <Button
                 type="submit"
                 variant="contained"
                 size="large"
                 sx={{ bgcolor: "secondary.light" }}
               >
-                ورود
+                ثبت نام
               </Button>
             </Stack>
 
-            <Stack spacing="20px">
-              <Typography>
-                رمز عبور یا حساب کاربری خود را فراموش نمودید؟
-                <br />
-                <Typography
-                  component={Link}
-                  sx={{
-                    color: "black",
-                    textDecoration: "underline",
-                  }}
-                  href="/"
-                >
-                  بازگردانی رمز عبور
-                </Typography>
+            <Typography textAlign="center">
+              حساب کاربری دارید؟
+              <Typography
+                component={Link}
+                sx={{
+                  color: "secondary.dark",
+                  textDecoration: "underline",
+                }}
+                href="/login"
+              >
+                وارد شوید
               </Typography>
-              <Typography>
-                چنانچه هنوز ثبت نام نکرده اید،
-                <Typography
-                  component={Link}
-                  sx={{
-                    color: "black",
-                    textDecoration: "underline",
-                  }}
-                  href="/signup"
-                >
-                  ثبت نام کنید
-                </Typography>
-              </Typography>
-            </Stack>
+            </Typography>
           </Stack>
         </Grid>
         <Grid item xs={6}>
@@ -127,4 +124,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default SignupPage;
