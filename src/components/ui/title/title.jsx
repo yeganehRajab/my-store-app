@@ -11,7 +11,7 @@ const Title = ({ titleText }) => {
       <Box
         width={{ lg: "36px", md: "30px", sm: "22px", xs: "20px" }}
         height={{ lg: "62px", md: "51.6px", sm: "37.8px", xs: "34.4px" }}
-        bgcolor={"secondary.dark"}
+        bgcolor={"primary.light"}
         borderRadius={"5px"}
         marginLeft={"16px"}
       ></Box>

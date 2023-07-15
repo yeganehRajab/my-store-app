@@ -24,16 +24,13 @@ const NewProductBannerCard = ({
       sx={style.stackSx()}
       padding={"15px"}
     >
-      {image.length > 0 ? (
-        <StyledImage
-          src={image}
-          alt="newProduct"
-          width={imageWidth}
-          height={imageHeight}
-        />
-      ) : (
-        ""
-      )}
+      <StyledImage
+        src={image}
+        alt="newProduct"
+        width={imageWidth}
+        height={imageHeight}
+      />
+
       <Stack width={{ lg: "60%", md: "70%", sm: "90%" }} zIndex={"2"}>
         <Typography variant="textLgRegular" color={"grey.light"}>
           {title}

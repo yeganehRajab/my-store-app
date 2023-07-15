@@ -17,6 +17,15 @@ import ProductCard from "../../src/components/ui/card/productCard/productCard";
 import { BADGE_STATUS } from "../../src/components/pages/home/homePage.constant";
 import NewProductBannerCard from "../../src/components/ui/card/newProductBannerCard/newProductBannerCard";
 
+import newP1 from "../../public/images/home/newProduct/1.png";
+import newP2 from "../../public/images/home/newProduct/2.png";
+import newP3 from "../../public/images/home/newProduct/3.png";
+import newP4 from "../../public/images/home/newProduct/4.png";
+import FeatureBox from "../../src/components/pages/home/featureBox/featureBox";
+import TruckIcon from "../../src/components/ui/icons/truck";
+import HeadPhoneIcon from "../../src/components/ui/icons/headPhone";
+import GranteeIcon from "../../src/components/ui/icons/grantee";
+
 const HomePage = () => {
   return (
     <Layout>
@@ -158,10 +167,10 @@ const HomePage = () => {
                   width="99%"
                   title="محصول جدید و قشنگ"
                   description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "
-                  image=""
+                  image={newP4}
                   link="#"
-                  imageHeight={100}
-                  imageWidth={80}
+                  imageHeight={140}
+                  imageWidth={"auto"}
                 />
                  
               </Grid>
@@ -178,10 +187,10 @@ const HomePage = () => {
                 <NewProductBannerCard
                   title="محصول جدید و قشنگ"
                   description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "
-                  image=""
+                  image={newP3}
                   link="#"
-                  imageHeight={100}
-                  imageWidth={80}
+                  imageHeight={150}
+                  imageWidth={"auto"}
                   height="200px"
                   width="99%"
                 />
@@ -203,10 +212,10 @@ const HomePage = () => {
                   width="99%"
                   title="محصول جدید و قشنگ"
                   description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "
-                  image=""
+                  image={newP2}
                   link="#"
-                  imageHeight={100}
-                  imageWidth={80}
+                  imageHeight={170}
+                  imageWidth={"auto"}
                 />
                  
               </Grid>
@@ -227,15 +236,39 @@ const HomePage = () => {
                 width="99%"
                 title="محصول جدید و قشنگ"
                 description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "
-                image=""
+                image={newP1}
                 link="#"
-                imageHeight={100}
-                imageWidth={80}
+                imageHeight={300}
+                imageWidth={"auto"}
               />
                
             </Grid>
           </Grid>
         </Box>
+
+        <Stack
+          width={"80%"}
+          flexDirection={"row"}
+          justifyContent={"space-between"}
+          pt={"50px"}
+        >
+          <FeatureBox
+            icon={<GranteeIcon />}
+            title={"ضمانت بازگشت کالا"}
+            subTitle={"7 روز ضمانت بازگشت کالا"}
+          />
+          <FeatureBox
+            icon={<TruckIcon />}
+            title={"ارسال سریع و رایگان"}
+            subTitle={"ارسال رایگان سفارش های بالای 300 هزار تومن"}
+          />
+
+          <FeatureBox
+            icon={<HeadPhoneIcon />}
+            title={"7 روز هفته، 24 ساعته"}
+            subTitle={"پشتیبانی شبانه روزی"}
+          />
+        </Stack>
       </Stack>
     </Layout>
   );

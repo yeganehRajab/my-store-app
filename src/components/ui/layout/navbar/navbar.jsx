@@ -34,7 +34,7 @@ const Navbar = () => {
       justifyContent={"space-between"}
       alignItems={"center"}
       direction={"row"}
-      bgcolor={"secondary.dark"}
+      bgcolor={"primary.light"}
       sx={style.stackSx()}
     >
       <Box>
@@ -60,7 +60,7 @@ const Navbar = () => {
       />
 
       <Stack alignItems={"center"} direction={"row"}>
-        <Button variant="outlined" sx={style.ButtonSx()} color="grey">
+        <Button variant="contained" sx={style.ButtonSx()} color="grey">
           <Typography variant="textXsMedium">ورود | ثبت نام</Typography>
         </Button>
 

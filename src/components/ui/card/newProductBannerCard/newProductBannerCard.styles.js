@@ -2,14 +2,14 @@ import { styled } from "@mui/material";
 import Image from "next/image";
 
 const stackSx = () => ({
-  backgroundColor: "primary.main",
+  backgroundColor: "common.black.main",
   borderRadius: "4px",
   position: "relative",
 });
 
 export const StyledImage = styled(Image)({
-  width: "50%",
-  height: "60%",
+  // width: "70%",
+  // height: "90%",
   position: "absolute",
   left: "0",
 });
