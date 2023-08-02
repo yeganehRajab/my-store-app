@@ -4,8 +4,11 @@ import style from "./navbar.styles";
 import SearchInput from "../../inputs/search/searchInput";
 import CartIcon from "../../icons/cart";
 import { useFormik } from "formik";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const router = useRouter();
+
   // search bar input
   const initialValues = {
     searchValue: "",
@@ -37,7 +40,7 @@ const Navbar = () => {
       bgcolor={"primary.light"}
       sx={style.stackSx()}
     >
-      <Box>
+      <Box onClick={() => router.push("/home")} sx={{ cursor: "pointer" }}>
         {/* TODO: remove inline style after adding logo photo */}
         <Typography
           variant="h3Medium"
@@ -60,7 +63,12 @@ const Navbar = () => {
       />
 
       <Stack alignItems={"center"} direction={"row"}>
-        <Button variant="contained" sx={style.ButtonSx()} color="grey">
+        <Button
+          variant="contained"
+          sx={style.ButtonSx()}
+          color="grey"
+          onClick={() => router.push("/login")}
+        >
           <Typography variant="textXsMedium">ورود | ثبت نام</Typography>
         </Button>
 

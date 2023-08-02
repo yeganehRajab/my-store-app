@@ -1,5 +1,6 @@
 import { Box, Rating, Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import style from "./productCard.styles";
 
 const ProductCard = ({
@@ -10,8 +11,9 @@ const ProductCard = ({
   image = "/images/home/product1.png",
   badgeStatus = 1,
 }) => {
+  const router = useRouter();
   return (
-    <Stack width={"270px"}>
+    <Stack width={"270px"} onClick={() => router.push("/productInfo?id=1")}>
       <Stack
         sx={style.imageStackSx()}
         justifyContent={"center"}

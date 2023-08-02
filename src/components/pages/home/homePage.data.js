@@ -89,6 +89,7 @@ export const products = [
     name: "محصول زیبا",
     badgeStatus: BADGE_STATUS.NEW,
     price: 49000,
+    image:"/images/home/newProduct/1.png"
   },
   {
     rate: 3,
@@ -96,6 +97,7 @@ export const products = [
     name: "محصول زیبا",
     badgeStatus: BADGE_STATUS.NEW,
     price: 419000,
+    image:"/images/home/newProduct/2.png"
   },
   {
     rate: 5,
@@ -103,6 +105,7 @@ export const products = [
     name: "محصول زیبا",
     badgeStatus: BADGE_STATUS.UNAVAILABLE,
     price: 479000,
+    image:"/images/home/newProduct/3.png"
   },
   {
     rate: 1,
@@ -110,6 +113,7 @@ export const products = [
     name: "محصول زیبا",
     badgeStatus: BADGE_STATUS.NEW,
     price: 49000,
+    image:"/images/home/newProduct/5.png"
   },
   {
     rate: 2,
@@ -117,6 +121,7 @@ export const products = [
     name: "محصول زیبا",
     badgeStatus: BADGE_STATUS.UNAVAILABLE,
     price: 60000,
+    image:"/images/home/newProduct/6.png"
   },
   {
     rate: 4,
@@ -124,6 +129,7 @@ export const products = [
     name: "محصول زیبا",
     badgeStatus: BADGE_STATUS.NEW,
     price: 469000,
+    image:"/images/home/newProduct/7.png"
   },
   {
     rate: 1,
@@ -131,6 +137,7 @@ export const products = [
     name: "محصول زیبا",
     badgeStatus: BADGE_STATUS.NEW,
     price: 1469000,
+    image:"/images/home/newProduct/8.png"
   },
   {
     rate: 5,
@@ -138,5 +145,6 @@ export const products = [
     name: "محصول زیبا",
     badgeStatus: BADGE_STATUS.UNAVAILABLE,
     price: 69000,
+    image:"/images/home/newProduct/9.png"
   },
 ];

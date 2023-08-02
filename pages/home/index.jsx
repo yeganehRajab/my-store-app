@@ -113,6 +113,7 @@ const HomePage = () => {
                   name={item.name}
                   badgeStatus={item.badgeStatus}
                   price={item.price}
+                  image={item.image}
                 />
               </Grid>
             ))}
