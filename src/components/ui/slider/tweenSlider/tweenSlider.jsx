@@ -53,15 +53,21 @@ const TweenSlider = ({ nodes }) => {
         perView: 4,
         spacing: 10,
       },
+      breakpoints: {
+        "(min-width: 450px) and (max-width: 600px)": {
+          slides: { perView: 3, spacing: 4 },
+        },
+
+        "(min-width: 300px) and (max-width: 450px)": {
+          slides: { perView: 2, spacing: 4 },
+        },
+      },
     },
     [ThumbnailPlugin(instanceRef)]
   );
 
   return (
-    <Stack
-      width={"100%"}
-      sx={style.sliderWrapperSx(theme)}
-    >
+    <Stack width={"100%"} sx={style.sliderWrapperSx(theme)}>
       <Box ref={sliderRef} className="keen-slider">
         {nodes.map((item, index) => (
           <Box className="keen-slider__slide " key={index}>
@@ -72,7 +78,11 @@ const TweenSlider = ({ nodes }) => {
 
       <Box ref={thumbnailRef} className="keen-slider " mt={"10px"}>
         {nodes.map((item, index) => (
-          <Box className="keen-slider__slide thumbnail " key={index}>
+          <Box
+            className="keen-slider__slide thumbnail "
+            key={index}
+            maxHeight={"150px"}
+          >
             {item}
           </Box>
         ))}
