@@ -8,7 +8,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <Stack position={"relative"}>
-      <Grid container bgcolor={"primary.dark"} sx={style.GridSx()}>
+      <Grid container bgcolor={"primary.light"} sx={style.GridSx()}>
         <Grid
           item
           xs={12}

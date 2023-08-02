@@ -1,32 +1,57 @@
 import { Box } from "@mui/material";
 import InstagramIcon from "../../ui/icons/instagram";
 import { BADGE_STATUS } from "./homePage.constant";
+import Image from "next/image";
+import sliderImage1 from "../../../../public/images/home/sliderImage.png";
 
 export const sliderNodes = [
   <Box
     className="keen-slider__slide"
     sx={{
       width: "100%",
-      backgroundColor: "secondary.light",
-      height: "200px",
     }}
+    borderRadius={"4px"}
     key={0}
   >
-    1
+    <Image
+      src={sliderImage1}
+      key={"iamge_0"}
+      alt="sliderImage"
+      height={"100%"}
+      width={"100%"}
+    />
   </Box>,
   <Box
     className="keen-slider__slide"
-    sx={{ width: "100%", backgroundColor: "secondary.main", height: "200px" }}
+    sx={{
+      width: "100%",
+    }}
+    borderRadius={"4px"}
     key={1}
   >
-    1
+    <Image
+      src={sliderImage1}
+      key={"iamge_0"}
+      alt="sliderImage"
+      height={"100%"}
+      width={"100%"}
+    />
   </Box>,
   <Box
     className="keen-slider__slide"
-    sx={{ width: "100%", backgroundColor: "primary.main", height: "200px" }}
+    sx={{
+      width: "100%",
+    }}
+    borderRadius={"4px"}
     key={2}
   >
-    1
+    <Image
+      src={sliderImage1}
+      key={"iamge_0"}
+      alt="sliderImage"
+      height={"100%"}
+      width={"100%"}
+    />
   </Box>,
 ];
 

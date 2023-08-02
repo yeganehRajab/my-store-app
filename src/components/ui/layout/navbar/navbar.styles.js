@@ -6,12 +6,12 @@ const stackSx = () => ({
 const ButtonSx = () => ({
   width: { sm: "160px", xs: "110px" },
   margin: "0",
+  backgroundColor: "common.white",
 });
 
 const searchInputSx = () => ({
   width: { lg: "600px", sm: "400px", xs: "150px" },
   height: "32px",
-  color: "red",
 });
 
 const navbarStyles = {

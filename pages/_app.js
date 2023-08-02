@@ -2,12 +2,21 @@ import "../styles/globals.css";
 
 import theme from "../styles/theme/theme";
 import { ThemeProvider } from "@mui/material";
+import { CacheProvider } from "@emotion/react";
+import { prefixer } from "stylis";
+import stylisRTLPlugin from "stylis-plugin-rtl";
+import createCache from "@emotion/cache";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
+  const cacheRtl = createCache({
+    key: "muirtl",
+    stylisPlugins: [prefixer, stylisRTLPlugin],
+  });
+
   return (
     <>
       <Head>

@@ -1,7 +1,7 @@
 const imageStackSx = () => ({
   width: "100%",
   height: "250px",
-  backgroundColor: "grey.main",
+  backgroundColor: "#f5f5f5",
   " .add": {
     width: "100%",
     backgroundColor: "primary.dark",
